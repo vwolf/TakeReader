@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="15G22010" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AudioFormatItem" customModule="TakeReader" customModuleProvider="target">
+            <connections>
+                <outlet property="propertyName" destination="wU9-3I-QR8" id="IaP-vy-ibB"/>
+                <outlet property="propertyValue" destination="gkf-TU-UiT" id="0Jw-p1-Ivd"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="AudioFormatItem" id="Hz6-mo-xeY" customClass="AudioFormatItem" customModule="TakeReader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wU9-3I-QR8">
+                    <rect key="frame" x="18" y="52" width="564" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Property Name" id="P2d-YF-xVK">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gkf-TU-UiT">
+                    <rect key="frame" x="18" y="22" width="564" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Property Value" id="dF9-1G-FWX">
+                        <font key="font" metaFont="system" size="18"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="wU9-3I-QR8" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="12y-ln-J4w"/>
+                <constraint firstItem="gkf-TU-UiT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="5il-GA-ETQ"/>
+                <constraint firstItem="wU9-3I-QR8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="E5u-hC-Br5"/>
+                <constraint firstItem="gkf-TU-UiT" firstAttribute="top" secondItem="wU9-3I-QR8" secondAttribute="bottom" constant="8" id="MN5-8r-QiP"/>
+                <constraint firstItem="gkf-TU-UiT" firstAttribute="top" secondItem="wU9-3I-QR8" secondAttribute="bottom" constant="8" id="hET-7C-U61"/>
+                <constraint firstAttribute="trailing" secondItem="wU9-3I-QR8" secondAttribute="trailing" constant="20" id="iHE-7B-ASZ"/>
+                <constraint firstAttribute="trailing" secondItem="gkf-TU-UiT" secondAttribute="trailing" constant="20" id="u61-Io-9qT"/>
+            </constraints>
+            <connections>
+                <outlet property="propertyName" destination="wU9-3I-QR8" id="OV2-db-qZC"/>
+                <outlet property="propertyValue" destination="gkf-TU-UiT" id="oxj-2U-B3n"/>
+            </connections>
+        </customView>
+    </objects>
+</document>
